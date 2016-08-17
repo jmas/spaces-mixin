@@ -2,232 +2,234 @@
 // p,m = padding,margin
 // a,t,r,b,l,h,v = all,top,right,bottom,left,horizontal,vertical
 // x,s,m,l,n = extra-small($x),small($s),medium($m),large($l),none(0px)
-@mixin spaces($x, $s, $m, $l, $xl, $xxl) {
-  .s-last-col {
-    overflow: hidden;
-  }
+@mixin spaces($prefix, $x, $s, $m, $l, $xl, $xxl) {
+  .#{$prefix} {
+    &-last-col {
+      overflow: hidden;
+    }
 
-  .s-ptn, .s-pvn, .s-pan {
-    padding-top: 0;
-  }
+    &-ptn, &-pvn, &-pan {
+      padding-top: 0;
+    }
 
-  .s-ptx, .s-pvx, .s-pax {
-    padding-top: $x;
-  }
+    &-ptx, &-pvx, &-pax {
+      padding-top: $x;
+    }
 
-  .s-pts, .s-pvs, .s-pas {
-    padding-top: $s;
-  }
+    &-pts, &-pvs, &-pas {
+      padding-top: $s;
+    }
 
-  .s-ptm, .s-pvm, .s-pam {
-    padding-top: $m;
-  }
+    &-ptm, &-pvm, &-pam {
+      padding-top: $m;
+    }
 
-  .s-ptl, .s-pvl, .s-pal {
-    padding-top: $l;
-  }
+    &-ptl, &-pvl, &-pal {
+      padding-top: $l;
+    }
 
-  .s-ptxl, .s-pvxl, .s-paxl {
-    padding-top: $xl;
-  }
+    &-ptxl, &-pvxl, &-paxl {
+      padding-top: $xl;
+    }
 
-  .s-ptxxl, .s-pvxxl, .s-paxxl {
-    padding-top: $xxl;
-  }
+    &-ptxxl, &-pvxxl, &-paxxl {
+      padding-top: $xxl;
+    }
 
-  .s-prn, .s-phn, .s-pan {
-    padding-right: 0;
-  }
+    &-prn, &-phn, &-pan {
+      padding-right: 0;
+    }
 
-  .s-prx, .s-phx, .s-pax {
-    padding-right: $x;
-  }
+    &-prx, &-phx, &-pax {
+      padding-right: $x;
+    }
 
-  .s-prs, .s-phs, .s-pas {
-    padding-right: $s;
-  }
+    &-prs, &-phs, &-pas {
+      padding-right: $s;
+    }
 
-  .s-prm, .s-phm, .s-pam {
-    padding-right: $m;
-  }
+    &-prm, &-phm, &-pam {
+      padding-right: $m;
+    }
 
-  .s-prl, .s-phl, .s-pal {
-    padding-right: $l;
-  }
+    &-prl, &-phl, &-pal {
+      padding-right: $l;
+    }
 
-  .s-prxl, .s-phxl, .s-paxl {
-    padding-right: $xl;
-  }
+    &-prxl, &-phxl, &-paxl {
+      padding-right: $xl;
+    }
 
-  .s-prxxl, .s-phxxl, .s-paxxl {
-    padding-right: $xxl;
-  }
+    &-prxxl, &-phxxl, &-paxxl {
+      padding-right: $xxl;
+    }
 
-  .s-pbn, .s-pvn, .s-pan {
-    padding-bottom: 0;
-  }
+    &-pbn, &-pvn, &-pan {
+      padding-bottom: 0;
+    }
 
-  .s-pbx, .s-pvx, .s-pax {
-    padding-bottom: $x;
-  }
+    &-pbx, &-pvx, &-pax {
+      padding-bottom: $x;
+    }
 
-  .s-pbs, .s-pvs, .s-pas {
-    padding-bottom: $s;
-  }
+    &-pbs, &-pvs, &-pas {
+      padding-bottom: $s;
+    }
 
-  .s-pbm, .s-pvm, .s-pam {
-    padding-bottom: $m;
-  }
+    &-pbm, &-pvm, &-pam {
+      padding-bottom: $m;
+    }
 
-  .s-pbl, .s-pvl, .s-pal {
-    padding-bottom: $l;
-  }
+    &-pbl, &-pvl, &-pal {
+      padding-bottom: $l;
+    }
 
-  .s-pbxl, .s-pvxl, .s-paxl {
-    padding-bottom: $xl;
-  }
+    &-pbxl, &-pvxl, &-paxl {
+      padding-bottom: $xl;
+    }
 
-  .s-pbxxl, .s-pvxxl, .s-paxxl {
-    padding-bottom: $xxl;
-  }
+    &-pbxxl, &-pvxxl, &-paxxl {
+      padding-bottom: $xxl;
+    }
 
-  .s-pln, .s-phn, .s-pan {
-    padding-left: 0;
-  }
+    &-pln, &-phn, &-pan {
+      padding-left: 0;
+    }
 
-  .s-plx, .s-phx, .s-pax {
-    padding-left: $x;
-  }
+    &-plx, &-phx, &-pax {
+      padding-left: $x;
+    }
 
-  .s-pls, .s-phs, .s-pas {
-    padding-left: $s;
-  }
+    &-pls, &-phs, &-pas {
+      padding-left: $s;
+    }
 
-  .s-plm, .s-phm, .s-pam {
-    padding-left: $m;
-  }
+    &-plm, &-phm, &-pam {
+      padding-left: $m;
+    }
 
-  .s-pll, .s-phl, .s-pal {
-    padding-left: $l;
-  }
+    &-pll, &-phl, &-pal {
+      padding-left: $l;
+    }
 
-  .s-plxl, .s-phxl, .s-paxl {
-    padding-left: $xl;
-  }
+    &-plxl, &-phxl, &-paxl {
+      padding-left: $xl;
+    }
 
-  .s-plxxl, .s-phxxl, .s-paxxl {
-    padding-left: $xxl;
-  }
+    &-plxxl, &-phxxl, &-paxxl {
+      padding-left: $xxl;
+    }
 
-  .s-mtn, .s-mvn, .s-man {
-    margin-top: 0px;
-  }
+    &-mtn, &-mvn, &-man {
+      margin-top: 0px;
+    }
 
-  .s-mtx, .s-mvx, .s-max {
-    margin-top: $x;
-  }
+    &-mtx, &-mvx, &-max {
+      margin-top: $x;
+    }
 
-  .s-mts, .s-mvs, .s-mas {
-    margin-top: $s;
-  }
+    &-mts, &-mvs, &-mas {
+      margin-top: $s;
+    }
 
-  .s-mtm, .s-mvm, .s-mam {
-    margin-top: $m;
-  }
+    &-mtm, &-mvm, &-mam {
+      margin-top: $m;
+    }
 
-  .s-mtl, .s-mvl, .s-mal {
-    margin-top: $l;
-  }
+    &-mtl, &-mvl, &-mal {
+      margin-top: $l;
+    }
 
-  .s-mtxl, .s-mvxl, .s-maxl {
-    margin-top: $xl;
-  }
+    &-mtxl, &-mvxl, &-maxl {
+      margin-top: $xl;
+    }
 
-  .s-mtxxl, .s-mvxxl, .s-maxxl {
-    margin-top: $xxl;
-  }
+    &-mtxxl, &-mvxxl, &-maxxl {
+      margin-top: $xxl;
+    }
 
-  .s-mrn, .s-mhn, .s-man {
-    margin-right: 0px;
-  }
+    &-mrn, &-mhn, &-man {
+      margin-right: 0px;
+    }
 
-  .s-mrx, .s-mhx, .s-max {
-    margin-right: $x;
-  }
+    &-mrx, &-mhx, &-max {
+      margin-right: $x;
+    }
 
-  .s-mrs, .s-mhs, .s-mas {
-    margin-right: $s;
-  }
+    &-mrs, &-mhs, &-mas {
+      margin-right: $s;
+    }
 
-  .s-mrm, .s-mhm, .s-mam {
-    margin-right: $m;
-  }
+    &-mrm, &-mhm, &-mam {
+      margin-right: $m;
+    }
 
-  .s-mrl, .s-mhl, .s-mal {
-    margin-right: $l;
-  }
+    &-mrl, &-mhl, &-mal {
+      margin-right: $l;
+    }
 
-  .s-mrxl, .s-mhxl, .s-maxl {
-    margin-right: $xl;
-  }
+    &-mrxl, &-mhxl, &-maxl {
+      margin-right: $xl;
+    }
 
-  .s-mrxxl, .s-mhxxl, .s-maxxl {
-    margin-right: $xxl;
-  }
+    &-mrxxl, &-mhxxl, &-maxxl {
+      margin-right: $xxl;
+    }
 
-  .s-mbn, .s-mvn, .s-man {
-    margin-bottom: 0px;
-  }
+    &-mbn, &-mvn, &-man {
+      margin-bottom: 0px;
+    }
 
-  .s-mbx, .s-mvx, .s-max {
-    margin-bottom: $x;
-  }
+    &-mbx, &-mvx, &-max {
+      margin-bottom: $x;
+    }
 
-  .s-mbs, .s-mvs, .s-mas {
-    margin-bottom: $s;
-  }
+    &-mbs, &-mvs, &-mas {
+      margin-bottom: $s;
+    }
 
-  .s-mbm, .s-mvm, .s-mam {
-    margin-bottom: $m;
-  }
+    &-mbm, &-mvm, &-mam {
+      margin-bottom: $m;
+    }
 
-  .s-mbl, .s-mvl, .s-mal {
-    margin-bottom: $l;
-  }
+    &-mbl, &-mvl, &-mal {
+      margin-bottom: $l;
+    }
 
-  .s-mbxl, .s-mvxl, .s-maxl {
-    margin-bottom: $xl;
-  }
+    &-mbxl, &-mvxl, &-maxl {
+      margin-bottom: $xl;
+    }
 
-  .s-mbxxl, .s-mvxxl, .s-maxxl {
-    margin-bottom: $xxl;
-  }
+    &-mbxxl, &-mvxxl, &-maxxl {
+      margin-bottom: $xxl;
+    }
 
-  .s-mln, .s-mhn, .s-man {
-    margin-left: 0px;
-  }
+    &-mln, &-mhn, &-man {
+      margin-left: 0px;
+    }
 
-  .s-mlx, .s-mhx, .s-max {
-    margin-left: $x;
-  }
+    &-mlx, &-mhx, &-max {
+      margin-left: $x;
+    }
 
-  .s-mls, .s-mhs, .s-mas {
-    margin-left: $s;
-  }
+    &-mls, &-mhs, &-mas {
+      margin-left: $s;
+    }
 
-  .s-mlm, .s-mhm, .s-mam {
-    margin-left: $m;
-  }
+    &-mlm, &-mhm, &-mam {
+      margin-left: $m;
+    }
 
-  .s-mll, .s-mhl, .s-mal {
-    margin-left: $l;
-  }
+    &-mll, &-mhl, &-mal {
+      margin-left: $l;
+    }
 
-  .s-mlxl, .s-mhxl, .s-maxl {
-    margin-left: $xl;
-  }
+    &-mlxl, &-mhxl, &-maxl {
+      margin-left: $xl;
+    }
 
-  .s-mlxxl, .s-mhxxl, .s-maxxl {
-    margin-left: $xxl;
+    &-mlxxl, &-mhxxl, &-maxxl {
+      margin-left: $xxl;
+    }
   }
 }
